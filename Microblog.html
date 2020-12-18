@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="footer, address, phone, icons" />
+    <title>Microblog</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css_microblog.css" />
+    
+</head>
+<body>
+
+    <header class = "navbar">
+        <div class="navbar__brand">
+            <img class="navbar__image" src = "logo.svg" alt = "The microblog logo"/>Microblog   
+        </div>
+        <ul class = "navbar__navigation">      <!--ul used to get bullt formats-->
+            <li class = "navbar__navigation-item"><a  class = "navbar_link">Recent</a></li>
+            <li class = "navbar__navigation-item"><a  class = "navbar_link">Calendar</a></li>
+
+        </ul>
+        
+    </header>
+    <main class="main">
+        <section>
+            <h1>Add new entry</h1>
+            <form class="form" action="/entry" method="POST">
+                <p class="form__input">
+                    <label for="entry" class="form__label">Entry contents:</label>
+                    <textarea  class="form__textarea" name="content" id="entry" ></textarea>
+                </p>
+                <button  class="form__submit" type="submit">Add entry</button> 
+            </form>
+        </section>
+        <section>
+            <h1>Recent posts</h1>
+            <article class="entry">
+                <div>
+                    <h2 class="entry__title">A bit of a chill day today</h2>
+                    <time class="entry__date" datetime="24-10-2019">•Oct 24</time>
+                </div>
+                <p>
+                    Today I couldn't do much programming, but that's OK! Can't be too awesome evry day now!
+                </p>
+               
+            </article>
+        </section>
+        <section></section>
+    </main>
+    <footer class="footer">
+        <div class="footer__left">
+            <h3>Micro<span>blog</span></h3>
+            <p class=footer__para>-Made by Paridhi Jain</p>
+        </div>
+
+        <div class="footer__center">
+            
+            <div class="footer__locationIcon">
+                <i class="fa fa-map-marker"></i>
+                <p><span>137 Gandhigram street</span> Rajkot, India</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="18ec.paridhijan@gmail.com">contact@paridhijain.com</a></p>
+            </div>
+
+
+        </div>
+
+        <div class="footer__right">
+            <p class="footer__about">
+                <span>About Me</span>
+                I am Learning Web Developement. 
+                Enjoying the process. 
+            </p>
+        
+
+            <div class="footer__icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+</html>
